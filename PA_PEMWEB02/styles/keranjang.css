@@ -1,0 +1,157 @@
+.keranjang-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.keranjang-table {
+    flex: 2;
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.keranjang-table th,
+.keranjang-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.keranjang-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.produk-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.ringkasan-order {
+    flex: 1;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.total-harga {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+}
+
+.tombol-checkout {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+}
+
+.tombol-lanjut {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.tombol-hapus {
+    padding: 0.5rem 1rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tombol-checkout:hover {
+    background-color: #45a049;
+}
+
+.tombol-lanjut:hover {
+    background-color: #e2e6ea;
+}
+
+.tombol-hapus:hover {
+    background-color: #c82333;
+}
+
+.keranjang-kosong {
+    text-align: center;
+    padding: 3rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .keranjang-wrapper {
+        flex-direction: column;
+    }
+    
+    .keranjang-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .produk-img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Tambahkan style untuk dark mode */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-mode .keranjang-table {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+.dark-mode .keranjang-table th,
+.dark-mode .keranjang-table td {
+    border-color: #404040;
+    color: #ffffff;
+}
+
+.dark-mode .ringkasan-order {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+.dark-mode .tombol-hapus,
+.dark-mode .tombol-checkout,
+.dark-mode .tombol-lanjut {
+    background-color: #404040;
+    color: #ffffff;
+}
+
+.dark-mode .keranjang-kosong {
+    color: #ffffff;
+} 
